@@ -1,0 +1,109 @@
+:root{
+    --primaryColour: rgb(255,255,255);
+    --secondaryColour: rgb(20, 20, 20);
+    --tertiaryColour: rgb(184, 184, 184);
+    --accentColour: rgb(184, 79, 149);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--primaryColour);
+    background-color: var(--secondaryColour);
+    font-family: Inter, sans-serif, Helvetica Neue, Helvetica, Arial;
+}
+
+.headerRelief{
+    height: 100px;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    background-color: var(--primaryColour);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+}
+.header div{
+    margin: 10px;
+}
+
+/* Logo */
+.headerLogo{
+    height: 140%;
+}
+.headerLogo img{
+    height: 100%;
+}
+
+/* Page Links */
+.headerPages{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+}
+.headerPages a{
+    margin: 20px;
+    color: var(--secondaryColour);
+    text-decoration: none;
+}
+.headerPages p{
+    margin: 0;
+}
+.headerPages a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* Contact Link */
+.headerContact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondaryColour);
+    text-decoration: none;
+    height: 50%;
+    margin: 10px;
+    flex-basis: 150px;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+.headerContact p{
+    margin: 0;
+    color: var(--primaryColour);
+}
+
+/* Content */
+.content{
+    background-color: var(--secondaryColour);
+    height: fit-content;
+}
+
+/* Main Image */
+.imageSpread{
+    background-image: url(../images/physio.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-color: var(--secondaryColour);
+    height: 700px;
+}
+
+/* Biography */
+.biography{
+    color: var(--primaryColour);
+    text-align: center;
+}
+.biography h1{
+    font-size: 50px;
+}
+.biography p{
+    margin: 0px;
+    padding: 25px;
+    padding-inline: 10%;
+    font-size: 25px;
+}
